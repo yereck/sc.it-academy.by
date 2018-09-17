@@ -1,2 +1,2 @@
 # sc.it-academy.by
-For home work 
+For home work  
