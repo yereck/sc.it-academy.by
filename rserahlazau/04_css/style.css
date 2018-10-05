@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+body {
+	font-family: serif;
+}
+.exotic_font {
+	font-family: 'Bad Script', cursive;
+}
+
+h3.exotic_font {
+	text-decoration: underline;
+}
+
+.right_side {
+	text-align: right;
+}
+
+h1 {
+	font-size: smaller;
+}
