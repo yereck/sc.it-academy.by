@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Контейнер с кодом</title>
+		<style type="text/css">
+			.konteiner {
+				width: 350px;
+			}
+			.zagolovok {
+				list-style-type: upper-roman;
+			}
+			.zagolovok span {
+				font-weight: bold;
+			}
+			.spisok {
+				list-style-type: lower-roman;
+			}
+			.code {
+				width: 400px;
+				background-color: black;
+				color: green;
+				line-height: 1.2em;
+				max-height: 4.8em;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul class="konteiner">
+			<li class="zagolovok"><span>Контейнер с кодом</span>
+				<ul class="spisok">
+					<li>Цвет фона: черный</li>
+					<li>Цвет текста: зеленый</li>
+					<li>Ширина: 400px</li>
+					<li>Максимальная высота контейнера: 4 строки</li>
+					<li>Переполнение: автоматическое</li>
+				</ul>
+			</li>
+			<li class="zagolovok"><span>Список</span>
+				<ul class="spisok">
+					<li>Ширина: 350px</li>
+					<li>Тип списка: римские цифры</li>
+					<li>Тип вложенного списка: римские нижний регистр</li>
+				</ul>
+			</li>
+		</ul>
+		<pre class="code">#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"</pre>
+	</body>
+</html>
