@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Верстка страницы с блоками</title>
+		<style type="text/css">
+			.navi {
+				width: 15em;
+				background-color: rgba(0,0,0,.1);
+				float: left;
+
+			}
+			.article {
+
+				background-color: rgba(0,0,0,.3);;
+				
+				margin-bottom: .2em;
+				margin-left: 15em;
+				overflow: auto;
+			}
+			.podval {
+				background-color: rgba(0,0,0,.5);
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navi">
+			<h3>Блок навигации</h3>
+			<ul>
+                <li><a href="index.html">Главная</a>
+                    <ul>
+                        <li><a href="news/news.html">Новости</a></li>
+                    </ul>
+                </li>
+                <li><a href="catalog.html">Каталог</a>
+                    <ul>
+                        <li><a href="catalog/a_w.html">Осень-Зима</a></li>
+                        <li><a href="catalog/s_s.html">Весна-Лето</a></li>
+                    </ul>
+                </li>
+                <li><a href="promo.html">Акции</a>
+                    <ul>
+                        <li><a href="promo/last.html">Актуальные</a></li>
+                        <li><a href="promo/old.html">Прошедшие</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">О нас</a>
+                    <ul>
+                        <li><a href="about/contacts.html">Контакты</a></li>
+                        <li><a href="about/scheme.html">Проезд</a></li>
+                    </ul>
+                </li>
+            </ul>
+		</div>
+		<div class="article">
+			
+			<h3>Статья 1</h3>
+			<p>«Си́мпсоны» (англ. The Simpsons) — самый длинный мультсериал в истории американского телевидения, длящийся 25 сезонов. Первая мини-серия «Good night» была показана в «Шоу Трейси Ульман» 19 апреля 1987 года.Демонстрация полноценных серий мультсериала началась 17 декабря 1989 года на канале FOX. Выпускается «Gracie Films» для кинокомпании «20th Century Fox». Мультсериал в настоящее время известен телезрителям более чем 100 стран.</p>
+        	
+		</div>
+		<div class="article">
+			<h3>Статья 2</h3>
+			<p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+               Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+               состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+               для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+               программирование графических интерфейсов (GUI). Давайте создадим простую программу прямо
+               сейчас.</p>
+        	<p>Наша первая программа</p>
+            <p>Наберём код в текстовом редакторе (например, в gedit). Потом мы разберёмся, что делает   каждая строка и пойдём дальше.</p>
+            <p>Введите эти 4 строки:</p>
+            <pre>#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"</pre>
+            <p>Это всё. Сохраните файл как hello.py в любом месте. Я предлагаю сохранить его в папке
+            python_examples в домашнем каталоге. Этот пример показывает, как просто написать программу на
+            Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+            <pre>chmod +x hello.py</pre>
+            <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+            <pre>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$</pre>
+            <p>Вот и всё.</p>
+   			<img src="envilope.png" align="right">
+		</div>
+		<div class="podval">Домашнее задание - базовое #1 Используя спрайт в общих документах (см. ссылку ниже),
+		разложите карты так, что бы получился 3♣ 5♥ 9♦ карты должны быть выстроены в ряд карты должны быть наложены друг друга
+		</div>
+	</body>
+</html>
