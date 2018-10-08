@@ -6,7 +6,7 @@ pre {
 	background-color: black;
 	color: green;
 	width: 400px;
-	height: 4em;
+	max-height: 4em;
 	overflow: auto;
 	margin-top: 0px;
 }
