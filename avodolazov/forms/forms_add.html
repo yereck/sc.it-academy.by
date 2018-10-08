@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 align="center">Заполните анкету</h1>
+        <table>
+            <form method="post" action="http://sc.it-academy.by/fe/form.php">
+                <!--i don't know why doesn't work it. required fields and patterns are ignoring--> 
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <label for="text">
+                        <input type="text" id="text" size="25" placeholder="Фамилия" required autofocus><br>
+                        <input type="text" id="text" size="20" placeholder="Имя" required><br>
+                        <input type="text" id="text" name="parents_name" size="24" placeholder="Отчество" required><br>
+                    </label>
+                    <fieldset>
+                        <legend>Паспортные данные</legend>
+                        <label for="pass">
+                            <input type="text" id="pass" size="5" placeholder="AA" required>
+                            <input type="text" id="pass" size="8" placeholder="1234567" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дата рождения</legend>
+                        <input type="text" id="birth" size="5" placeholder="2000"><label for="birth"></label><br>
+                        <label for="month">
+                            <select id="month">
+                                <option value="1">Январь</option>
+                                <option value="2">Февраль</option>
+                                <option value="3">Март</option>
+                                <option value="4">Апрель</option>
+                                <option value="5">Май</option>
+                                <option value="6">Июнь</option>
+                                <option value="7">Июль</option>
+                                <option value="8">Август</option>
+                                <option value="9">Сентябрь</option>
+                                <option value="10">Октябрь</option>
+                                <option value="11">Ноябрь</option>
+                                <option value="12">Декабрь</option>
+                            </select><br>
+                        </label>
+                        <input type="number" id="birth" size="5"><label for="birth"></label><br>
+                    </fieldset>
+                    <select id="country">
+                        <option>РБ</option><label for="country"></label><br>
+                        </select><br>
+                    Адрес:<br>
+                    <textarea></textarea>
+                </fieldset>
+            </form>
+        </table>
+        <table>
+            <fieldset>
+                <form method="post" action="http://sc.it-academy.by/fe/form.php">
+                    <legend>Интересы</legend>
+                    <fieldset>
+                        <legend>array: Хобби</legend>
+                        <label for="hobby">
+                        <input type="checkbox" id="hobby" value="fishing">Рыбалка<br>
+                        <input type="checkbox" id="hobby" value="astro">Астрономия<br>
+						<input type="checkbox" id="hobby" value="diving">Дайвинг<br>
+						<input type="checkbox" id="hobby" value="mark">Марки
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Домашние животные (возможность выбора нескольких вариантов:</legend>
+                        <label for="animal">
+                            array: select multiple<br>
+                            <select multiple size="12">
+                                <optgroup label="Попугаи">
+                                    <option>Волнистый</option>
+                                    <option>Ара</option>
+                                    <option>Неразлучник</option>
+                                <optgroup label="Рыба">
+                                    <option>Караси</option>
+                                    <option>Окуни</option>
+                                    <option>Осётр</option>
+                                <optgroup label="Птицы">
+                                    <option>Стая ворон</option>
+                                    <option>Аист</option>
+                                    <option>Археоптерикс</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </form>
+            </fieldset>
+        </table>
+        <form method="post" id="pass" action="http://sc.it-academy.by/fe/form.php">
+            <fieldset>
+                <legend>Данные для восстановления пароля</legend>
+                <input type="text" pattern="[А-Яа-яЁё^\s]{5,}" name="login" size="20" placeholder="Логин" required><br>
+                <input type="password" pattern="[A-Za-z^\s]{10,}" name="pass" size="20" placeholder="Пароль" required autocomplete="off"><br>
+            </fieldset>
+        </form>
+        <form method="post" action="http://sc.it-academy.by/fe/form.php">
+            <fieldset>
+                <legend>Координаты:</legend>
+                <input type="email" placeholder="введите адрес почты" pattern=".*@.*\.com"><br>
+                <input type="url" placeholder="введите адрес сайта" pattern="https://.*"><br>
+            </fieldset>
+        </form>
+        <form method="post" action="http://sc.it-academy.by/fe/form.php">
+            <fieldset>
+                <legend>Цифры</legend>
+                <input type="number" max="2.5" min="-2.5" step="0.1">number: Диапазон от -2,5 до 2,5 с шагом 0,1<br>
+                <input type="range" max="10" min="1">range: Максимальное 10 минимальное 1
+            </fieldset>
+        </form>
+        <form method="post" id="submit" action="http://sc.it-academy.by/fe/form.php">
+            <fieldset>
+                <legend>Кнопки управления</legend>
+                <label for="submit">
+                    <input type="submit" id="submit" value="Отправить">
+                    <input type="submit" id="submit" value="Сбросить"><br>
+                    <button type="button" id="submit"><img src="email.jpg"></button>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
