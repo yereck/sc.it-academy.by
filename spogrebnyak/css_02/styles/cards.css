@@ -1,0 +1,17 @@
+.card_def {
+	display: inline-block;
+	width: 142.75px;
+	height: 198.22px;
+	background-image: url("../pics/cards.png");
+	background-repeat: no-repeat;
+}
+
+.card_1 {background-position: -142.75px -198.22px;}
+.card_2 {
+	background-position: -428.25px -594.66px;
+	margin-left: -70px;
+}
+.card_3 {
+	background-position: -285.5px -1387.54px;
+	margin-left: -70px;
+}

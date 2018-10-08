@@ -1,0 +1,40 @@
+.row {
+	background-color: rgb(240,240,240);
+	overflow: hidden;
+}
+.navigation {
+	width: 15em;
+	float: left;	
+}
+
+.navigation div {
+	background-color: rgb(180,180,180);
+}
+
+.article {
+	float: right;
+	width: calc(100% - 15em);
+}
+
+.sub_article {
+	margin-bottom: .2em;
+}
+
+.sub_article div {
+	overflow: auto;
+	background-color: gray;
+}
+
+.footer {
+	background-color: rgb(140,140,140);
+}
+
+.h3 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 2;
+}
+
+.pic {
+	float: right;
+}

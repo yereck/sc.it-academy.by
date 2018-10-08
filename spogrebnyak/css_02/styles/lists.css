@@ -1,0 +1,26 @@
+pre {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.code{
+	background-color: black;
+	color: green;
+	width: 400px;
+	height: 4em;
+	overflow: auto;
+	margin-top: 0px;
+}
+
+.ul {
+	width: 350px;
+	list-style: upper-roman;
+	font-weight: normal;
+}
+
+.li {font-weight: 600}
+
+.sub_ul {
+	width: 350px;
+	list-style: lower-roman;
+	font-weight: normal;
+}
