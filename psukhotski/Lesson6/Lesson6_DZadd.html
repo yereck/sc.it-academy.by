@@ -16,7 +16,7 @@
         position: relative;
       }
       li ul {
-        display: none;
+        display: block;
         position: absolute;
         top: 0;
         left: 150px;
@@ -24,8 +24,8 @@
       }
       li:hover ul {
         display: block;
-        opacity: 1;     /*мне показалось, что с opacity верное решение, но почему-то не заработало*/
-        transition: all 1s ease;        
+        opacity: 1;
+        transition: opacity 2s ease;        
       }
       li a {
         display: block;
@@ -57,7 +57,7 @@
         width: 150px;
         }
         li ul {
-        display: none;
+        display: block;
         position: absolute;
         top: 100%;             
         left: 0;
@@ -67,7 +67,7 @@
         display: block;        
         width: 150px;
         opacity: 1;
-        transition: all 1s ease;
+        transition: opacity 2s ease;
         }
       }
 		</style>
