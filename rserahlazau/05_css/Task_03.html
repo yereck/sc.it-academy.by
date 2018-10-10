@@ -8,14 +8,20 @@
 				width: 15em;
 				background-color: silver;
 				float: left;
+				overflow: hidden;
 			}
 			div.article {
 				background-color: gray;
 				margin-bottom: 0.2em;
+				margin-left: 15em;
+				overflow: hidden;
 			}
 			div#lowbox{
 				background-color: gray;
 				clear: both;
+			}
+			div.article #mailImg {
+				float: right;
 			}
 		</style>
 	</HEAD>
@@ -44,7 +50,8 @@
 			Занимает всю доступную ширину<br>
 			Высота по размеру контента<br>
 			Должен присутствовать цвет фона<br>
-			Во всех статьях сделайте отступ снизу .2em
+			Во всех статьях сделайте отступ снизу .2em<br>
+			<img id="mailImg" src="icon_mail.png">
 		</div>
 		<div id="lowbox">
 			Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
