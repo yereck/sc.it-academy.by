@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<HTML> 
+	<HEAD>
+		<META charset="utf-8">		
+		<TITLE>Пример страницы</TITLE> 
+		<STYLE>
+			table {				
+				border-collapse: collapse;
+				counter-reset: mycount 65;
+			}
+			td {
+				width: 40px;
+				height: 40px;
+				border: 1px solid black;
+				font-size: 35px;
+				text-align: center;
+			}
+			tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+				background-color: black;
+				color: white;
+			}
+			td:after {
+				counter-increment: mycount -1;
+				content: counter(mycount);
+			}
+		</STYLE>
+	</HEAD>
+	<BODY> 		 
+		<table>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+		</table>	
+	</BODY>  
+</HTML>
