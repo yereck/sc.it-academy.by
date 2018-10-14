@@ -1,0 +1,31 @@
+table {
+	caption-side: bottom;
+	border-collapse: collapse;
+}
+td, TR:not(:first-child) {
+	border-style: dotted;
+	border-width: 1px;
+}
+TR:first-child {
+	text-align: center;
+	color: white;
+	background-color: grey;
+	border: none;
+}
+
+TR:not(:first-child) {
+	text-align: left;
+}
+
+TR:not(:first-child):nth-child(odd) {
+	background-color: lightgrey;
+}
+
+TR:not(:first-child):nth-clild(even) {
+	background-color: white;
+}
+
+TR:not(:first-child):hover {
+	cursor: pointer;
+	color: red;
+}
