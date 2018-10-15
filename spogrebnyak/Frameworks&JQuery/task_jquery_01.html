@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<HTML> 
+    <HEAD> 
+        <META charset="utf-8"> 
+        <TITLE>Домашнее задание базовое JQuery</TITLE> 
+        <style type="text/css">
+            .none{background-color: white;}
+            .equal {background-color: green;}
+            .nonequal {background-color: red;}
+        </style>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#pass1, #pass2').addClass('none');
+ 
+                $('#pass1, #pass2').keyup(function(){
+                    var pass1 = $('#pass1').val();
+                    var pass2 = $('#pass2').val();
+
+                    if (pass1 != pass2) {
+                        $('#pass1, #pass2').removeClass().addClass('nonequal');
+                    }  else if ((pass1 == "") && (pass2 == "")) {
+                        $('#pass1, #pass2').removeClass().addClass('none');
+                    } else { 
+                        $('#pass1, #pass2').removeClass().addClass('equal');
+                    }
+                });
+           });
+       </script>
+    </HEAD> 
+    <BODY>
+        <form name="compare_pass">
+            <fieldset>
+                <legend>Подтверждение пароля</legend>
+                <input type="password" name="password1" id="pass1" placeholder="Введите пароль" autocomplete="off"><br>
+                <input type="password" name="password2" id="pass2" placeholder="Повторите ввод пароля" autocomplete="off"><br>
+            </fieldset>
+        </form>
+    </BODY> 
+</HTML>  
