@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#Password1').on("input", function(){
+		$('#Password1, #Password2').on("keyup", function(){
 				if($("#Password1").val() != $("#Password2").val()){
 				$('#Password1').addClass('zebra');
 				$('#Password2').addClass('zebra');
@@ -30,17 +30,6 @@
 				}
 			});
 	
-		$('#Password2').on("input", function(){
-				if($("#Password1").val() != $("#Password2").val()){
-				$('#Password1').addClass('zebra');
-				$('#Password2').addClass('zebra');
-				$("#img").attr("src","media/angry.png");
-				}else{
-				$('#Password1').removeClass('zebra');
-				$('#Password2').removeClass('zebra');
-				$("#img").attr("src","media/happy.png");
-				}
-			});
 	});
 	</script>
 </head>
