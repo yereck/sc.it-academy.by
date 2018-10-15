@@ -1,9 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Print env vars') {
             steps { 
-                echo 'Hello World'
+                sh 'env > env.txt' 
+                for (String i : readFile('env.txt').split("\r?\n")) {
+                    println i
+                }
+                sh 'printenv'
             }
         }
     }
