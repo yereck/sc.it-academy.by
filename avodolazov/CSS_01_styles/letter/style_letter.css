@@ -1,0 +1,18 @@
+header {text-align:right;}
+
+h1
+{
+    font-size:16px;
+    font-weight:600;
+}
+
+h3{text-decoration:underline;}
+
+h3, article
+{
+    text-indent: inherit;
+    text-indent: 1.5em;
+    font-family: cursive;
+    src: url(https://fonts.googleapis.com/css?family=Caveat);
+    text-align: justify;
+}                    
