@@ -4,9 +4,9 @@ pipeline {
         stage('Create sanboxes') {
             steps { 
                 sh 'printenv'
-                mkdir -p /var/www/sandbox/$CHANGE_BRANCH
+                sh "mkdir -p /var/www/sandbox/$CHANGE_BRANCH"
                 //slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
-                ln -s $WORKSPACE /var/www/sandbox/$CHANGE_BRANCH/$CHANGE_AUTHOR
+                sh "ln -s $WORKSPACE /var/www/sandbox/$CHANGE_BRANCH/$CHANGE_AUTHOR"
             }
         }
     }
