@@ -1,34 +1,35 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charser='utf-8'>
         <title>task4</title>
     </head>
     <body>
-        <h1>HOW-TO: Программа на Python, Часть 3</h1>
+        <h1 id="tit">HOW-TO: Программа на Python, Часть 3<img src="logo.png" width="250" title="logo" alt="error" align="right"></h1>
         <ul>
-            <li><EM>Программа на Python - часть 1</EM></li>
-            <li><EM>Программа на Python - часть 2</EM></li>
-            <li><EM>Программа на Python - часть 3</EM></li>
+            <li><a href='Python1.html'><EM>Программа на Python - часть 1</EM></a></li>
+            <li><a href='Python2.html'><EM>Программа на Python - часть 2</EM></a></li>
+            <li><a href='#'><EM>Программа на Python - часть 3</EM></a></li>
         </ul>
-        <h2>Содержание</h2>
+        <h2 id="main">Содержание</h2>
         <h3>HOW-TO: Программа на Python, Часть 3</h3>
         <ul>
-            <li><INS>Модули</INS></li>
-            <li><INS>Функции</INS></li>
+            <li><a href="#modules">Модули</a></li>
+            <li><a href="#functions">Функции</a></li>
         </ul>
         <Hr>
         <p>В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и
         присвоение, операторы <STRONG>if</STRONG> и <STRONG>while</STRONG>. Я обещал, что в этой части мы изучим модули и
         функции. Давайте начнём.</p>
-        <h2>Модули</h2>
+        <h2 id="modules">Модули</h2>
+        <a href=#main>К содержанию</a>
         <p>Модули предлагают способ расширить программирование на Python. Вы можете создать
         свои модули, использовать те, которые поставляются с Python или которые написали
         другие. В самом Python есть сотни модулей, которые облегчают написание программ.
         Список модулей, поставляемых с Python, находится по адресу:
-        <EM><INS>http://docs.python.org/modindex.html</INS></EM>. Некоторые модули предназначены для определённых
+        <EM><a href="http://docs.python.org/modindex.html" target="_blank">http://docs.python.org/modindex.html</a></EM>. Некоторые модули предназначены для определённых
         операционных систем, но большинство из них кроссплатформенные и работают
-        одинаково на <INS>Linux</INS>, <INS>Mac</INS> и <INS>Microsoft Windows</INS>. Для использования внешнего модуля
+        одинаково на <a href="https://ru.wikipedia.org/wiki/Linux" target="_blank">Linux</a>, <a href="https://ru.wikipedia.org/wiki/Mac_OS" target="_blank">Mac</a> и <a href="https://ru.wikipedia.org/wiki/Windows" target="_blank">Microsoft Windows</a>. Для использования внешнего модуля
         необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
         называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
         используем этот модуль в нашем первом примере.</p>
@@ -48,7 +49,8 @@ for cntr in range(1,15):
         модуль «random». Мы должны явно указать Python на это.</p>
         <br>
         <hr>
-        <h2>Функции</h2>
+        <h2 id="functions">Функции</h2>
+        <a href=#main>К содержанию</a>
         <p>Когда мы импортировали модуль random, мы использовали функцию <STRONG>randint()</STRONG>. Функция
         — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
         более одного раза. Это упрощает работу над программой и предотвращает набор одного и
@@ -92,8 +94,14 @@ def DoTwo(num1,num2):
 DoTwo(1,2)
 DoTwo(1,4)
 DoTwo(10,5)</PRE>
-        <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-
+        <p id="en">Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-
         либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
         программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+        <table width=100%>
+                <col width=30%><col width=40%><col width=30%>
+                <tr>
+                    <td align="left"><a href="Python2.html#en"><object><img src="left-pointing-arrow.svg" width="100" height="50"></object></a></td><td align="center"><a href="#tit"><object><img src="icon.svg" width="100" height="50"></object></a></td><td align="right"><a href="Python1.html#en"><object><img src="right-arrow.svg" width="100" height="50"></object></a></td>
+                </tr>
+            </table>
     </body>
 </html>
