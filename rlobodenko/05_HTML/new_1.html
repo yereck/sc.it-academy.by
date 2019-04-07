@@ -33,6 +33,7 @@
 				<FIELDSET> 
 					<LEGEND>Строка поиска</LEGEND>
 					<INPUT TYPE="text" NAME="search" MAXLENGTH="10" required autofocus><span>*</span>
+					<input type="submit" value="Искать"><br>
 					<input type="submit" value="Искать">
 				<label>
 					<input type="radio" name="search_dist" value="site">
@@ -264,17 +265,12 @@ autofocus><span>*</span>
 <h2>Загрузка файла на сервер:</h2>
 <form method="post" action="http://sc.it-academy.by/fe/form.php" enctype="multipart/form-data">
 			<FIELDSET> 
-
 <LEGEND>Upload</LEGEND> 
 <label FOR="file">Файл:</label>
 <label>
 <input type="file" name="file_Field" dir="ltr"></label><br>
 <label FOR="submit">Срок хранения (года):</label><br>
 <INPUT TYPE="text" ID="years" NAME="years" SIZE="5">
-
-
-
-
 <input type="submit" value="Загрузить"><br>
 	</fieldset>
 </form></TD>
@@ -284,7 +280,6 @@ autofocus><span>*</span>
 			<FIELDSET> 
 <LEGEND>Строка поиска</LEGEND>  
 <input type="email" name="e-mail" placeholder="Только русские буквы"> <br>
-
 <label FOR="url"><em>Телефонный номер в формате</em><br>
 <em>+ХХХ-ХХ-ХХХХХХХ, где Х - любое число</em></label><br>
 <input type="url" name="telephone" pattern="\+[0-9]{3}-[0-9]{2}-[0-9]{7}" placeholder="+375-29-1234567"> <br>
