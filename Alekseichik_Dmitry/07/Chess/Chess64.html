@@ -26,14 +26,10 @@
             border: 1px solid black;
         }
 
-        /*выбираем все нечётные ряды и все чётные ячейки внутри них и красим*/
-        tr:nth-child(odd)>td:nth-child(even) {
-            background-color: black;
-            color: white;
-        }
 
-        /*наоборот*/
-        tr:nth-child(even)>td:nth-child(odd) {
+        /*выбираем все нечётные ряды и все чётные ячейки внутри них и красим (и наоборот) */
+        tr:nth-child(even)>td:nth-child(odd),
+        tr:nth-child(odd)>td:nth-child(even) {
             background-color: black;
             color: white;
         }
